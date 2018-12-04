@@ -3,16 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>jQuery Front End LIst</title>
+    <title>To Do List using jQuery</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      li::before {
+        content: '🚴 ';
+      }
+    </style>
   </head>
   <body>
     <h1>To-Do List</h1>
     <ul id="toDoList">
-      <li>Example to do</li>
+      <li>Click me to finish</li>
     </ul>
 
     <input id="input" type="text" value="Learn jQuery" />
-    <button id="addToDo">Add to Do</button>
+    <button id="addToDo">Add to Do</button><br />
+    <button id="removeAllToDos"><h1>Set it all on fire</h></button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="./js/script.js"></script>
